@@ -2,7 +2,7 @@
 
 ### _This project was created solely for the education of the author(s) and is not in a complete or portfolio-ready state. It should not be considered representative of professional work._
 \
-[Epicodus](https://www.epicodus.com/) - [Intermediate JavaScript](https://www.learnhowtoprogram.com/intermediate-javascript) - [Week 4, Lesson 23](https://www.learnhowtoprogram.com/intermediate-javascript/object-oriented-javascript/address-book-movie-tickets-bank-account)
+[Epicodus](https://www.epicodus.com/) - [Intermediate JavaScript](https://www.learnhowtoprogram.com/intermediate-javascript) - [Week 1, Lesson 23](https://www.learnhowtoprogram.com/intermediate-javascript/object-oriented-javascript/address-book-movie-tickets-bank-account)
 \
 Date created: 2021-01-26
 
@@ -21,17 +21,21 @@ _Practice: Bank Account_
 ## Tests
   ```
   Describe: Account()
-  Test: "It will construct an account object"
-  Expect(new Account().toEqual(Account {});
+    Test: "It will construct an account object"
+    Expect(new Account().toEqual(Account {});
 
-  Test: "It takes a firstName argument and constructs an object with the same property and its value"
-  Expect(new Account("John")).toEqual(Account {firstName: "John"});
+    Test: "It takes a firstName argument and constructs an object with the same property and its value"
+    Expect(new Account("John")).toEqual(Account {firstName: "John"});
 
-  Test: "It takes a lastName argument and constructs an object with the same property and its value"
-  Expect(new Account("John", "Doe")).toEqual(Account {firstName: "John", lastName: "Doe"});
+    Test: "It takes a lastName argument and constructs an object with the same property and its value"
+    Expect(new Account("John", "Doe")).toEqual(Account {firstName: "John", lastName: "Doe"});
 
-  Test: "It constructs an account object with an initial balance of 0"
-  Expect(new Account("John", "Doe")).toEqual(Account {firstName: "John", lastName: "Doe", balance: 0});
+    Test: "It constructs an account object with an initial balance of 0"
+    Expect(new Account("John", "Doe")).toEqual(Account {firstName: "John", lastName: "Doe", balance: 0});
+
+  Describe: makeDeposit()
+    Test: "It takes in a string value, converts to a float and adds it to the account balance"
+    Expect(makeDeposit("150.50").toEqual("Deposit of $150.50 made. Your new balance is: 150.5");
   ```
 
 ## License
