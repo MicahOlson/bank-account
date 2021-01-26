@@ -24,9 +24,11 @@ _Practice: Bank Account_
   Test: "It will construct an account object"
   Expect(new Account().toEqual(Account {});
 
-  Test: "It takes a firstName arguement and constructs an object with the same property and it's value"
-  Expect(new Account("John")).toEqual(Account {firstName: "John"})
+  Test: "It takes a firstName argument and constructs an object with the same property and its value"
+  Expect(new Account("John")).toEqual(Account {firstName: "John"});
 
+  Test: "It takes a lastName argument and constructs an object with the same property and its value"
+  Expect(new Account("John", "Doe")).toEqual(Account {firstName: "John", lastName: "Doe"});
   ```
 
 ## License
