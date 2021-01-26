@@ -20,12 +20,12 @@ _Practice: Bank Account_
 
 ## Tests
   ```
-  Describe: function()
-  Test: "Describes the input/output and expected behavior in English not code or pseudo-code"
-  Code: 
-  Expect(function(argument).toEqual(return);
+  Describe: Account()
+  Test: "It will construct an account object"
+  Expect(new Account().toEqual(Account {});
 
   
+
   ```
 
 ## License
