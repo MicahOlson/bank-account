@@ -33,9 +33,13 @@ _Practice: Bank Account_
     Test: "It constructs an account object with an initial balance of 0"
     Expect(new Account("John", "Doe")).toEqual(Account {firstName: "John", lastName: "Doe", balance: 0});
 
-  Describe: makeDeposit()
-    Test: "It takes in a string value, converts to a float and adds it to the account balance"
+  Describe: makeDeposit(depositAmount)
+    Test: "It takes a number as a string, converts it to the absolute value of a float and adds it to the account balance"
     Expect(makeDeposit("150.50").toEqual("Deposit of $150.50 made. Your new balance is: 150.5");
+  
+  Describe: makeWithdrawal(withdrawalAmount)
+    Test: "It takes a number as a string, converts it to the absolute value of a float and subtracts it from the account balance"
+    Expect(makeDeposit("50.50").toEqual("Withdrawal of $50.50 complete. Your new balance is: 100");
   ```
 
 ## License
