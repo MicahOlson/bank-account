@@ -1,4 +1,4 @@
-Website has input forms to collect information from user to create a new account and declare initial balance, save it in the bank, pull up "this" account, make deposits/withdrawals, and display balance on webpage
+Website has input forms to collect information from user to create a new account and declare initial balance (which will use deposit method), save it in the bank, pull up "this" account, make deposits/withdrawals, and display balance on webpage
 
 Account object
 properties
@@ -6,9 +6,9 @@ properties
   lastName
   balance
 methods
-  deposit
-  withdrawal
-  displayBalance
+  makeDeposit
+  makeWithdrawal
+  getBalance
 
 Bank object (holds all Accounts)
 property
