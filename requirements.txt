@@ -1,0 +1,19 @@
+Website has input forms to collect information from user to create a new account and declare initial balance, save it in the bank, pull up "this" account, make deposits/withdrawals, and display balance on webpage
+
+Account object
+properties
+  name
+  balance
+methods
+  deposit
+  withdrawal
+  displayBalance
+
+Bank object (holds all Accounts)
+property
+  collection of account
+methods, 
+  addAccount
+    create and tag account with unique id
+  findAccount
+  deleteAccount
