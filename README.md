@@ -29,6 +29,10 @@ _Practice: Bank Account_
 
   Test: "It takes a lastName argument and constructs an object with the same property and its value"
   Expect(new Account("John", "Doe")).toEqual(Account {firstName: "John", lastName: "Doe"});
+
+  Test: "It takes an initial balance as a string, converts it to a float and then constructs an object with the same property and its value"
+  Expect(new Account("John", "Doe", "50")).toEqual(Account {firstName: "John", lastName: "Doe", balance: "50"});
+
   ```
 
 ## License
