@@ -2,7 +2,8 @@ Website has input forms to collect information from user to create a new account
 
 Account object
 properties
-  name
+  firstName
+  lastName
   balance
 methods
   deposit

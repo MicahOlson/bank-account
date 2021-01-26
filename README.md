@@ -24,7 +24,8 @@ _Practice: Bank Account_
   Test: "It will construct an account object"
   Expect(new Account().toEqual(Account {});
 
-  
+  Test: "It takes a firstName arguement and constructs an object with the same property and it's value"
+  Expect(new Account("John")).toEqual(Account {firstName: "John"})
 
   ```
 
