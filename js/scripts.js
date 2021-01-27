@@ -1,7 +1,7 @@
-function Account(firstName, lastName) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.balance = 0;
+function Account(firstNameFromUser, lastNameFromUser) {
+  this.firstName = firstNameFromUser;
+  this.lastName = lastNameFromUser;
+  this.balance = 0; 
 }
 
 Account.prototype.makeDeposit = function(depositAmount) {
@@ -12,4 +12,8 @@ Account.prototype.makeDeposit = function(depositAmount) {
 Account.prototype.makeWithdrawal = function(withdrawalAmount) {
   this.balance -= Math.abs(parseFloat(withdrawalAmount));
   return "Withdrawal of $" + withdrawalAmount + " complete. Your new balance is: " + this.balance;
+}
+
+Account.prototype.fullName = function() {
+  return this.firstName + " " + this.lastName;
 }
